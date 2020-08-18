@@ -5,7 +5,7 @@ August 18, 2020
 US Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+This project aims to present statistics on the use of shared bicycles in three American cities: Washington, NY and Chicago.
 
 ### Files used
 Include the files used
