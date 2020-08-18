@@ -8,7 +8,13 @@ US Bikeshare Project
 This project aims to present statistics on the use of shared bicycles in three American cities: Washington, NY and Chicago.
 
 ### Files used
-Include the files used
+This project dataset for three cities, each one located on a different .csv file:
+chicago.csv
+new_york_city.csv
+washington.csv
+
+The python code to run the program is:
+bikeshare_2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+All credits go to Udacity's team!
