@@ -119,7 +119,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating the most popular stations and trip...\n')
     start_time = time.time()
 
     # display most commonly used start station
@@ -145,7 +145,7 @@ def trip_duration_stats(df):
       df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating trip duration...\n')
     start_time = time.time()
 
     # display total travel time
@@ -168,7 +168,7 @@ def user_stats(df, city):
       (str) city - name of the city to analyze
     """
 
-    print('\nCalculating User Stats...\n')
+    print('\nCalculating user stats...\n')
     start_time = time.time()
 
     # Display counts of user types
