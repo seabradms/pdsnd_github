@@ -20,21 +20,18 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city=input("Would you like to see data for Chicago, New York City, or Washington?\n")
     while city.lower() not in ["chicago", "new york city", "washington"]:
-        print("\nOoops, invalid option.")
-        city=input("Would you like to see data for Chicago, New York City or Washington?\n")
+        city=input("\nOoops, invalid option. Would you like to see data for Chicago, New York City or Washington?\n")
 
     # get user input for filter options
     filtertype=input("Would you like to filter the data by month, day, or not at all? Choose only one option:\n")
     while filtertype.lower() not in ["month", "day", "not at all"]:
-        print("\nOoops, invalid option.")
-        filtertype=input("Would you like to filter the data by month, day, or not at all? Choose only one option:\n")
+        filtertype=input("\nOoops, invalid option. Would you like to filter the data by month, day, or not at all? Choose only one option:\n")
 
     if filtertype=="month":
         # get user input for month (all, january, february, ... , june)
         month=input("Please enter a month (January, February, ... or June):\n")
         while month.lower() not in ["january", 'february', 'march', 'april', 'may', 'june']:
-            print("\nOoops, invalid option.")
-            month=input("Please enter a month (January, February, ... or June):\n")
+            month=input("\nOoops, invalid option. Please enter a month (January, February, ... or June):\n")
 
         day="all"
 
@@ -42,8 +39,7 @@ def get_filters():
         # get user input for day of week (all, monday, tuesday, ... sunday)
         day=input("Please enter a day of week (Monday, Tuesday, ... or Sunday):\n")
         while day.lower() not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
-            print("\nOoops, invalid option.")
-            day=input("Please enter a day of week (Monday, Tuesday, ... or Sunday):\n")
+            day=input("\nOoops, invalid option. Please enter a day of week (Monday, Tuesday, ... or Sunday):\n")
 
         month="all"
 
@@ -211,8 +207,7 @@ def raw_data(df):
     # get user input to check if they want to see the raw data
     rawdata=input("Would you like to see raw data? Enter yes or no.\n")
     while rawdata.lower() not in ["yes", "no"]:
-        print("\nOoops, invalid option.")
-        rawdata=input("Would you like to see raw data? Enter yes or no.\n")
+        rawdata=input("\nOoops, invalid option. Would you like to see raw data? Enter yes or no.\n")
 
     if rawdata=="yes":
         seq=list(range(0, len(df.index)+1, 5))
@@ -220,8 +215,7 @@ def raw_data(df):
             print(df[seq[i]:seq[i+1]])
             morerows=input("Would you like to see 5 more rows? Enter yes or no.\n")
             while morerows.lower() not in ["yes", "no"]:
-                print("\nOoops, invalid option.")
-                morerows=input("Would you like to see 5 more rows? Enter yes or no.\n")
+                morerows=input("\nOoops, invalid option. Would you like to see 5 more rows? Enter yes or no.\n")
             if morerows!="yes":
                 break
 
@@ -238,8 +232,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         while restart.lower() not in ["yes", "no"]:
-            print("\nOoops, invalid option.")
-            restart=input('Would you like to restart? Enter yes or no.\n')
+            restart=input('\nOoops, invalid option. Would you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
